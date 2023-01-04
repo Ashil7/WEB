@@ -1,0 +1,110 @@
+<html>   
+   <head>
+      <title>Form Validation</title>      
+      <script type = "text/javascript">
+      
+       function validate() {
+            
+         if( document.Formj.userid.value == "" ) {
+            document.getElementById("userid").innerHTML = "Enter the user id!";
+                        document.Formj.userid.focus() ;
+            return false;
+        }
+        if( document.Formj.pass.value == "" ) {
+            alert( "Please provide Password" );
+            document.Formj.pass.focus() ;
+            return false;
+        }
+        if( document.Formj.Name.value == "" ) {
+            alert( "Please provide your Name" );
+            document.Formj.Name.focus() ;
+            return false;
+        }
+        if( document.Formj.EMail.value == "" ) {
+            alert( "Please provide your Email" );
+            document.Formj.EMail.focus() ;
+            return false;
+        }
+        if( document.Formj.address.value == "" ) {
+            alert( "Please provide your Address" );
+            document.Formj.address.focus() ;
+            return false;
+        }
+        if( document.Formj.country.value == "" ) {
+            alert( "Please provide your Country" );
+            document.Formj.country.focus() ;
+            return false;
+        }
+        if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+            document.myForm.Zip.value.length != 6 ) {
+            
+            alert( "Please provide a zip in the format 123456." );
+            document.myForm.Zip.focus() ;
+            return false;
+    }
+}
+       
+
+            
+      </script>      
+   </head>
+   
+   <body>
+      <form action = "" name = "Formj" onsubmit = "return(validate());">
+        <center>
+            <h1>Registration Form</h1>
+            <table  align="center" cellspacing = "2" cellpadding = "2" style="border-radius: 10px; background-color:rgb(143, 190, 238) ; height: 500px; width: 500px;"  >
+            <tr>
+                <td> </td>
+                <td> </td>
+            </tr>
+                <tr>
+                <td style="padding-left: 50px;">User ID</td>
+                <td align="center"><input type = "text" name = "userid"/> <span style=" color: red; ; " id="userid" > </span></td>
+             </tr>
+             
+             <tr>
+                <td style="padding-left: 50px;">Password</td>
+                <td align="center"><input type = "password" name = "pass" /></td>
+             </tr>
+            <tr>
+               <td style="padding-left: 50px;">Name</td>
+               <td align="center"><input type = "text" name = "Name" /></td>
+            </tr>
+            
+            <tr><td style="padding-left: 50px;">EMail</td>
+               <td align="center"><input type = "text" name = "EMail" /></td>
+            </tr>
+             <tr>
+                <td style="padding-left: 50px;">Address</td>
+                <td align="center"><textarea name="address"></textarea></td>
+             </tr>            
+            <tr>
+               <td style="padding-left: 50px;">Zip Code</td>
+               <td align="center"><input type = "text" name = "Zip" /></td>
+            </tr>
+            <tr>
+                <td style="padding-left: 50px;">Gender</td>
+                <td style="padding-left: 60px;"><input type="radio" name="male">Male <input type="radio" name="female">Female</td>
+            </tr>
+            <tr>
+               <td style="padding-left: 50px;">Country</td>
+               
+                  <td align="center"><input type = "text" name = "country" /></td>
+            
+      
+            </tr>
+            <tr>
+                <td style="padding-left: 50px;">About</td>
+                <td align="center"><textarea name="about"></textarea></td>
+             </tr>
+           
+            <tr>
+                
+               <td align="center" colspan="2"><input type = "submit" value = "Submit" /></td>
+            </tr>
+            
+         </table></center>
+      </form>      
+   </body>
+</html>
