@@ -1,0 +1,182 @@
+<html>
+<head>
+<title>Validation</title>
+<style>
+	body
+	{
+		background-color: yellow;
+	}
+	h1
+	{
+		color: blue;
+		text-align: center;
+	}
+	#id,#passw,#na,#adr,#cntr,#zp,#ma,#gend,#lang,#about
+	{
+		color: green;
+	}
+	input
+	{
+		background-color: black;
+		color: aliceblue;
+		text-align: center;
+	}
+	textarea
+	{
+		background-color: black;
+		color: aliceblue;
+	}
+</style>
+<script>
+function validation()
+{
+var uid=document.form.usid.value;
+var password=document.form.pass.value;
+var name=document.form.name.value;
+var add=document.form.add.value;
+var cnt=document.form.cnt.value;
+var zip=document.form.zip.value;
+var mail=document.form.mail.value;
+var mailval=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+var lower=/[a-z]/g;
+var upper=/[A-Z]/g;
+var number=/[0-9]/;
+var sp=/[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+
+if(uid==""||password==""||name==""||add==""||cnt==""||zip==""||mail=="")
+{
+alert("Field Cannot Be Blank");
+document.form.uid.focus;
+return false;
+}
+else if(uid.length<6 || uid.length>16)
+{
+alert("User Id Must be 6 to 16 Characters");
+document.form.uid.focus;
+return false;
+}    
+else if(password.length<8 || password.length>16)
+{
+alert("Password Must be 8 to 16 Characters");
+document.form.password.focus;
+return false;
+}
+
+if(password.match(lower) && password.match(upper) && password.match(number) && password.match(sp))
+{
+return true;
+}
+else
+{
+alert("Password Must Contain Small Letters and Capital Letters and Letters and Special Characters");
+document.form.password.focus;
+return false;
+}
+
+if(name.match(number) || name.match(sp))
+{
+	alert("Name Must be Contain Only Letters");
+	document.form.name.focus;
+	return false;
+}
+else
+{
+	return true;
+}
+
+if(cnt.match(number) || cnt.match(sp))
+{
+	alert("Country Must be Contain Only Letters");
+	document.form.cnt.focus;
+	return false;
+}
+else
+{
+	return true;
+}
+
+if(zip.match(lower) || cnt.match(upper) || zip.match(sp))
+{
+	alert("Zip Code Must Contain Numbers Only");
+	document.form.zip.focus;
+	return false;
+}
+else
+{
+	return true;
+}
+
+if(mail.match(mailval))
+{
+return true;
+}
+else
+{
+alert("Invalid Format");
+document.form.mail.focus;
+return false;
+}
+}
+</script>
+</head>
+<body>
+<h1>JOB APPLICATION</h1>
+<br><br>
+<center>
+<table>
+<form name=form method="post" onsubmit="validation()">
+<tr>
+	<td id="id">User Id</td>
+	<td><input type="text" id="usid" name="usid" placeholder="Enter User Id">
+</tr>
+<tr>
+	<td id="passw">Password</td>
+	<td><input type="text" id="pass" name="pass" placeholder="Enter Your Password">
+</tr>
+<tr>
+	<td id="na">Name</td>
+	<td><input type="text" id="name" placeholder="Enter NAme" name="name">
+</tr>
+<tr>
+	<td id="adr">Address</td>
+	<td><input type="text" id="add" name="add" placeholder="Enter Your Address">
+</tr>
+<tr>
+	<td id="cntr">Country</td>
+	<td><input type="text" id="cnt" name="cnt" placeholder="Country">
+</tr>
+<tr>
+	<td id="zp">Zipcode</td>
+	<td><input type="text" id="zip" name="zip" placeholder="Zipcode">
+</tr>
+<tr>
+	<td id="ma">Email</td>
+	<td><input type="text" id="mail" name="mail" placeholder="E-Mail">
+</tr>
+<tr>
+	<td id="gend">Gender</td>
+	<td><input type="radio" name="gender">
+	<label>Male</label>
+	<input type="radio" name="gender">
+	<label>Female</label>
+</tr>
+<tr>
+	<td id="lang">Language</td>
+	<td><input type="radio" name="Language">
+	<label>English</label>
+	<input type="radio" name="Language">
+	<label>Non-English</label>
+</tr>
+<tr>
+	<td id="about">About</td>
+	<td><textarea rows="4" cols="25" placeholder="About" id="about" name="about">
+	</textarea>
+	</td>
+</tr>
+</table>
+<br>
+<input type="submit" value="Submit" name="sub">
+</form>
+</center>
+</body>
+</html>

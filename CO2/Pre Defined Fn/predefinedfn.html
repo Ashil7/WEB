@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>CO2</title>
+	<script>
+function nameFn()
+{
+	var name=prompt("ENTER NAME:");
+	var length=name.length;
+	document.write("<br>")
+	document.write("Name is: "+name)
+	document.write("<br>")
+	document.write("<br>")
+	document.write("Length of the String is: "+length)
+	
+}
+function mathsFn()
+{
+	var x=prompt("ENTER A INTEGER:");
+	var z=prompt("ENTER A POWER:");
+	document.write("Value of PI is:<br>"+Math.PI)
+	document.write("<br>")
+	document.write("<br>")
+	document.write("Rounded Value of is:<br>"+Math.round(x))
+	document.write("<br>")
+	document.write("<br>")
+	document.write("Power is:<br>"+Math.pow(x,z))
+}
+</script>
+</head>
+<body bgcolor="red">
+<br><br>
+<h1 align="center"><u>Methods<u></h1>
+<br><br><br><br><br><br><br><br><br>
+<center>
+<input type="button" onclick="nameFn()" value="Click Here For Name"><br><br><br><br><br><br><br><br><br>
+<input type="button" onclick="mathsFn()" value="Click Here For Math">
+</center>
+</input>
+</html>

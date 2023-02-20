@@ -1,0 +1,105 @@
+<html>
+<head>
+    <style>
+        button
+        {
+            padding: 22px 20px;
+        }
+        body
+        {
+            background-color: black;
+        }
+        h1
+        {
+            text-align: center;
+            color: black;
+            background-color: white;
+        }
+        h2
+        {
+            color: white;
+        }
+        #bt1,#bg1
+        {
+            background-color: red;
+            border: none;
+            color: white;
+        }
+        #bt2,#bg2
+        {
+            background-color: green;
+            border: none;
+        }
+        #bt3,#bg3
+        {
+            background-color: yellow;
+            border: none;
+        }
+        #bt4,#bg4
+        {
+            background-color: orange;
+            border: none;
+        }
+    </style>
+    <script>
+        function red()
+        {
+            document.getElementById("head").style.color="red";
+        }
+        function green()
+        {
+            document.getElementById("head").style.color="green";
+        }
+        function yellow()
+        {
+            document.getElementById("head").style.color="yellow";
+        }
+        function orange()
+        {
+            document.getElementById("head").style.color="orange";
+        }
+        function bgred()
+        {
+            document.getElementById("bd").style.backgroundColor="red";
+        }
+        function bggreen()
+        {
+            document.getElementById("bd").style.backgroundColor="green";
+        }
+        function bgyellow()
+        {
+            document.getElementById("bd").style.backgroundColor="yellow";
+        }
+        function bgorange()
+        {
+            document.getElementById("bd").style.backgroundColor="orange";
+        }
+    </script>
+    <title>Change Colour</title>
+</head>
+<body id="bd">
+    <h1 id="head">COLOUR CHANGE</h1>
+    <br><br><br><br><br>
+    <center>
+    <table>
+        <tr>
+        <td><h2>Change Heading Colour To:-</h2><td>
+        <td><button id="bt1" onclick="red()">Red</button></td>
+        <td><button id="bt2" onclick="green()">Green</button></td>
+        <td><button id="bt3" onclick="yellow()">Yellow</button></td>
+        <td><button id="bt4" onclick="orange()">Orange</button></td>
+        </tr>
+    </table>
+    <br><br><br><br>
+    <table>
+        <tr>
+            <td><h2>Change Background Colour To:-</h2></td>
+            <td><button id="bg1" onclick="bgred()">Red</button></td>
+            <td><button id="bg2" onclick="bggreen()">Green</button></td>
+            <td><button id="bg3" onclick="bgyellow()">Yellow</button></td>
+            <td><button id="bg4" onclick="bgorange()">Orange</button></td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body
+{
+    background-color:#FFD700;
+    align-items: center;
+}
+input
+{
+    color:black;
+    background-color: red;
+    padding: 14px;  
+    margin: 3px;  
+    font-size: 15px;
+}
+h1
+{
+    text-align: center;
+    color: blueviolet;
+}
+.formstyle
+{
+    width: 200px;  
+    height: 420px;
+    margin: auto; 
+    border: 2px solid black;  
+    padding: 20px;   
+}
+
+#calc
+{
+    height: 50px;
+    width: 200px;
+    background-color:yellow;
+    color:red;
+}
+#star,#minus,#plus,#equal,#div
+{
+    background-color: green;
+    color:white;
+    height: 49px;
+    width: 41px;
+    font-size: 15px;
+}
+#dot
+{
+    background-color: red;
+    color:black;
+    height: 49px;
+    width: 41px;
+    font-size: 15px;
+
+}
+#clear
+{
+    height: 70px;
+    width: 193px;
+    margin-top: 10px;
+    background-color:black;
+    color:white;
+}

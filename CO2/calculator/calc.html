@@ -1,0 +1,37 @@
+<html>
+<head> 
+<link rel="stylesheet" href="style.css">
+<title>CALCULATOR</title>   
+</head>  
+<body>  
+<h1>CALCULATOR</h1>  
+<div class= "formstyle">  
+<form name = "form">       
+  <input type ="text" id = "calc"  name = "display"> <br> <br>  
+  <input type = "button" value = "1" onclick = "form.display.value += '1' ">  
+  <input type = "button" value = "2" onclick = "form.display.value += '2' ">  
+  <input type = "button" value = "3" onclick = "form.display.value += '3' ">  
+   <input type = "button" value = "+" id="plus" onclick = "form.display.value += '+' "> 
+  <br> <br>  
+
+  <input type = "button" value = "4" onclick = "form.display.value += '4' ">  
+  <input type = "button" value = "5" onclick = "form.display.value += '5' ">  
+  <input type = "button" value = "6" onclick = "form.display.value += '6' ">  
+  <input type = "button" value = "-" id="minus" onclick = "form.display.value += '-' ">  
+  <br> <br>  
+  <input type = "button" value = "7" onclick = "form.display.value += '7' ">  
+  <input type = "button" value = "8" onclick = "form.display.value += '8' ">  
+  <input type = "button" value = "9" onclick = "form.display.value += '9' ">  
+  <input type = "button" value = "*" id="star" onclick = "form.display.value += '*' ">  
+  <br> <br>     
+  <input type = "button" value = "0" onclick = "form.display.value += '0' ">  
+  <input type = "button" value = "." id="dot" onclick = "form.display.value += '.' ">  
+  <input type = "button" value = "/" id="div"onclick = "form.display.value += '/' "> 
+  <input type = "button" value = "=" id="equal" onclick = "form.display.value = eval(form.display.value) ">  
+  <br>   
+  <input type = "button" value = "Reset" onclick = "form.display.value = ' ' " id= "clear" >  
+  <br>   
+</form>  
+</div>  
+</body>  
+</html>

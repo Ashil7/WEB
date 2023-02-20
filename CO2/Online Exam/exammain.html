@@ -1,0 +1,222 @@
+<html>
+<head>
+	<title>ONLINE EXAMINATION</title>
+	<script>
+		function score()
+		{
+			var first=document.getElementById("first");
+			var second=document.getElementById("second");
+			var third=document.getElementById("thr");
+			var four=document.getElementById("four");
+			var five=document.getElementById("five");
+			var six=document.getElementById("six");
+			var seven=document.getElementById("seven");
+			var eight=document.getElementById("eight");
+			var nine=document.getElementById("nine");
+			var ten=document.getElementById("ten");
+
+			var score=0;
+			if(first.checked)
+			{
+				score++;
+			}
+			if(second.checked)
+			{
+				score++;
+			}
+			if(third.checked)
+			{
+				score++;
+			}
+			if(four.checked)
+			{
+				score++;
+			}
+			if(five.checked)
+			{
+				score++;
+			}
+			if(six.checked)
+			{
+				score++;
+			}
+			if(seven.checked)
+			{
+				score++;
+			}
+			if(eight.checked)
+			{
+				score++;
+			}
+			if(nine.checked)
+			{
+				score++;
+			}
+			if(ten.checked)
+			{
+				score++;
+			}
+			alert("Subitted Successfully \nYour Score is:\n"+score);
+		}
+	</script>
+<style>
+body
+{
+	background-color:pink;
+}
+h1
+{
+	color:white;
+	background-color: blue;
+	text-align: center;
+}
+input[type=submit]
+{
+	vertical-align: middle;
+	background-color: #04AA6D;
+	color: white;
+	border: none;
+	padding: 16px 32px;
+	cursor: pointer;
+}
+</style>
+<body>
+<form name="form" onsubmit="score()">
+<h1>ചോദ്യങ്ങളും ഉത്തരങ്ങളും മലയാളം</h1>
+<ol>
+<li>ഇന്ത്യയിലെ ഏറ്റവും പഴക്കമുള്ള വർത്തമാനപത്രം?</li>
+<br>
+<input type="radio" name="on">
+<label>മഗധ</label>
+<br>
+<input type="radio" id="first" name="on">
+<label>ബോംബെസമാചാർ</label>
+<br>
+<input type="radio" name="on">
+<label>ഹോമർ</label>
+<br>
+<br>
+
+<li>പൊതു തെരഞ്ഞെടുപ്പ് നടന്ന ആദ്യ ഏഷ്യൻ രാജ്യം?</li>
+<br>
+<input type="radio" name="tw">
+<label>പാകിസ്ഥാൻ</label>
+<br>
+<input type="radio" id="second" name="tw">
+<label>ഇന്ത്യ</label>
+<br>
+<input type="radio" name="tw">
+<label>അഫ്ഗാനിസ്ഥാൻ</label>
+<br>
+<br>
+
+<li>കേരള നവോദ്ധാനത്തിന്റെ പിതാവ് എന്നറിയപ്പെടുന്നത്?</li>
+<br>
+<input type="radio" id="thr" name="thr">
+<label>ശ്രീനാരായണ ഗുരു</label>
+<br>
+<input type="radio" name="thr">
+<label>ആർ കെ നാരായണൻ</label>
+<br>
+<input type="radio" name="thr">
+<label>ഗുരു ഗ്രന്ഥ സാഹിബ്</label>
+<br>
+<br>
+
+<li>‘മകരമഞ്ഞ്’ എന്ന സിനിമ ഏത് കലാകാരന്റെ ജീവിതമാണ് പ്രമേയമാക്കിയത്?</li>
+<br>
+<input type="radio" name="four">
+<label>ഡോ .രാജേന്ദ്രപ്രസദ്</label>
+<br>
+<input type="radio" name="four">
+<label>ഡോ .രാജേന്ദ്രപ്രസദ്</label>
+<br>
+<input type="radio" id="four" name="four">
+<label>രാജാ രവിവർമ്മ</label>
+<br>
+<br>
+
+<li>ഹാരി പോട്ടർ എന്ന വിഖ്യാത കൃതിയുടെ രചയിതാവ്?</li>
+<br>
+<input type="radio" name="fi">
+<label>സ്‌കോട്ട് സാൽമാൻ</label>
+<br>
+<input type="radio" name="fi">
+<label>ഹോമർ</label>
+<br>
+<input type="radio"  id="five" name="fi">
+<label>ജെ കെ റൗളിങ്</label>
+<br>
+<br>
+
+<li>മാഡിബ എന്നു വിളിക്കപ്പെടുന്ന ലോകനേതാവ്?</li>
+<br>
+<input type="radio" name="si">
+<label>പീക്കിംഗ്</label>
+<br>
+<input type="radio" id="six" name="si">
+<label>നെൽസൺ മണ്ടേല</label>
+<br>
+<input type="radio" name="si">
+<label>ക്രെസ്കോ</label>
+<br>
+<br>
+
+<li>ലോകത്തിലെ ആദ്യത്തെ വനിതാ പ്രസിഡണ്ട് ആയ ‘മരിയ ഇസബെൽ പെറോൺ ‘ ഭരണം നടത്തിയ രാജ്യം?</li>
+<br>
+<input type="radio" name="se">
+<label>മെക്സിക്കോ</label>
+<br>
+<input type="radio" name="se">
+<label>കോസ്റ്റോറിക്ക</label>
+<br>
+<input type="radio" id="seven" name="se">
+<label>അർജന്റീന</label>
+<br>
+<br>
+
+<li> കേരള ചരിത്ര മ്യൂസിയം സ്ഥിതി ചെയ്യുന്ന സ്ഥലം ഏത്?</li>
+<br>
+<input type="radio" name="ei">
+<label>ഇടുക്കി</label>
+<br>
+<input type="radio" id="eight" name="ei">
+<label>ഇടപ്പള്ളി</label>
+<br>
+<input type="radio" name="ei">
+<label>കൊച്ചി</label>
+<br>
+<br>
+
+<li>ജടായു പാറ സ്ഥിതി ചെയ്യുന്ന സ്ഥലം ഏത്?</li>
+<br>
+<input type="radio" id="nine" name="nine">
+<label>ചടയമംഗലം</label>
+<br>
+<input type="radio" name="nine">
+<label>ശിരുവാണി</label>
+<br>
+<input type="radio" name="nine">
+<label>ആലപ്പുഴ</label>
+<br>
+<br>
+
+<li>ലോകത്തിലെ ഏറ്റവും പഴക്കം ചെന്ന തേക്കിൻ തോട്ടം കേരളത്തിലെ ഏതു ജില്ലയിലാണ്?</li>
+<br>
+<input type="radio" name="ten">
+<label>കോഴിക്കോട്</label>
+<br>
+<input type="radio" name="ten">
+<label>പാലക്കാട്</label>
+<br>
+<input type="radio" id="ten" name="ten">
+<label>മലപ്പുറം</label>
+<br>
+<br>
+<center>
+<input type="submit" value="Submit" onclick="score()">
+</center>
+</form>
+</ol>
+</body>
+</html>
